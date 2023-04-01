@@ -15,6 +15,6 @@ def CustomChatGPT(user_input):
     messages.append({"role": "assistant", "content": ChatGPT_reply})
     return ChatGPT_reply
 
-demo = gradio.Interface(fn=CustomChatGPT, inputs = "text", outputs = "text", title = "Sahithya GPT")
+demo = gradio.Interface(fn=CustomChatGPT, inputs = "text", outputs = "text", title = "creation of your own chatGPT")
 
 demo.launch(share=True)
