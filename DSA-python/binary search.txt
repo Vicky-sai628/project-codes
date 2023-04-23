@@ -1,0 +1,16 @@
+binary search
+-------------------------------------------------
+a=list(map(int,input().split()))#list of number
+n=int(input())#target
+l=0#lower
+u=len(a)-1#upper
+while(l<=u):
+    mid=(l+u)//2#mid value of the list
+    print(mid)
+    if(a[mid]==n):
+        print(n)
+        break
+    elif(a[mid]<n):
+        l=mid+1
+    else:
+        u=mid-1

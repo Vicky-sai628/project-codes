@@ -1,0 +1,20 @@
+# Simple Interest Calculation
+def simple_interest(p, r, t):
+    return (p * r * t) / 100
+
+# Compound Interest Calculation
+def compound_interest(p, r, t):
+    return p * ((1 + (r / 100)) ** t - 1)
+
+# User Inputs
+p = float(input("Enter principal amount: "))
+r = float(input("Enter rate of interest: "))
+t = float(input("Enter time (in years): "))
+
+# Calculate and Display Simple Interest
+si = simple_interest(p, r, t)
+print("Simple Interest: Rs. {:.2f}".format(si))
+
+# Calculate and Display Compound Interest
+ci = compound_interest(p, r, t)
+print("Compound Interest: Rs. {:.2f}".format(ci))

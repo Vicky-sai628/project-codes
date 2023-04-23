@@ -1,0 +1,20 @@
+#linear search
+#-----------------------------------------------------------------------------
+def linear_search(arr,x):
+    n=len(arr)
+
+    for i in range(n):
+        
+        if arr[i]==x:
+            return i
+    return -1
+
+arr=[12,13,14,15,16]
+x=14
+
+res=linear_search(arr,x)
+
+if res==-1:
+    print("element found")
+else:
+    print("element found at index:",res)

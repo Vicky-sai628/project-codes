@@ -1,0 +1,12 @@
+reverse of a string without using any functions
+----------------------------------------------------
+a= "Hello, world!"
+c= list(a)
+start = 0
+end = len(c) - 1
+while start < end:
+    c[start], c[end] = c[end], c[start]
+    start += 1
+    end -= 1
+reversed_str = ''.join(c)
+print(reversed_str) 

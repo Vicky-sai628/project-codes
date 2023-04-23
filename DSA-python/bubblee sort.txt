@@ -1,0 +1,18 @@
+#bubblee sort
+#--------------------------------------------------------------------------------------
+def bubble_sort(arr):
+    swapped=False
+    n=len(arr)
+    for i in range(n-1,0,-1):    #outer loop start with lenghtnof srtr,strating index,going in a negative way
+        for j in range(i):    #inner loop
+            if arr[j] > arr[j+1]:
+                swapped=True
+                arr[j],arr[j+1] = arr[j+1], arr[j]
+        if not swapped:
+            return
+arr=[64, 34, 25, 12, 22, 11, 90]
+print("\n Input array:")
+print(arr)
+bubble_sort(arr)
+print("\n Sorted array:")
+print(arr)
