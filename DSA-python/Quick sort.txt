@@ -1,4 +1,3 @@
-#quick sort
 def quick_sort(arr):
     less=[]
     equal=[]
