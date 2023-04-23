@@ -1,5 +1,3 @@
-reverse of a string without using any functions
-----------------------------------------------------
 a= "Hello, world!"
 c= list(a)
 start = 0
